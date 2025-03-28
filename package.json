@@ -1,0 +1,55 @@
+{
+  "name": "nestjs-dynamic-query-builder",
+  "version": "1.0.0",
+  "description": "A dynamic query builder for NestJS and TypeORM",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naldomadeira/nestjs-dynamic-query-builder"
+  },
+  "keywords": [
+    "nestjs",
+    "query",
+    "typeorm",
+    "builder",
+    "filters",
+    "pagination"
+  ],
+  "author": "Naldo naldomadeira@gmail.com",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^11.0.12",
+    "@nestjs/core": "^11.0.12",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.21"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.23.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.0",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "typeorm": "^0.3.0"
+  }
+}
